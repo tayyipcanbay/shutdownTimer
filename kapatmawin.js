@@ -10,6 +10,7 @@ function kapatWin() {
     cp.stderr.on("data", function (data) {
         console.error(data.toString());
     });
+
 }
 function iptalWin() {
     var cp = spawn(process.env.comspec, ['/c', 'shutdown', '-a']);
