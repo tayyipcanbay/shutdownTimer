@@ -6,12 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="./kapatmamac.js"></script>
 </head>
 
 <body>
     <p>Saniye cinsinden süre:</p>
     <input type="text" id="sure">
-    <button onclick="kapatma()">Kapat</button>
+    <button id="kapat" onclick="kapatma(sure.value)">Kapat</button>
+    <button id="iptal" onclick="iptalet()">İptal Et</button>
 </body>
 
 </html>
