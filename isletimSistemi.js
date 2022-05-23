@@ -7,7 +7,6 @@ function kapatma() {
         kapatWin();
     }
     if (process.platform === "darwin") {
-        iptalMac();
         kapatMac();
     }
 }
