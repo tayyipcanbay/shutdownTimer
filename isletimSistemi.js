@@ -1,7 +1,21 @@
+var { kapatWin, iptalWin } = require('./kapatmawin');
+var { kapatMac, iptalMac } = require('./kapatmamac');
+function kapatma() {
 
-if (process.platform === "win32") {
-
+    if (process.platform === "win32") {
+        iptalWin();
+        kapatWin();
+    }
+    if (process.platform === "darwin") {
+        iptalMac();
+        kapatMac();
+    }
 }
-if (process.platform === "darwin") {
-
+function iptal() {
+    if (process.platform === "win32") {
+        iptalWin();
+    }
+    if (process.platform === "darwin") {
+        iptalMac();
+    }
 }
